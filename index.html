@@ -5,25 +5,278 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <title>Wedding</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("nav").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+          top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="background"></div>
   <header>
     <nav>
-      <div class="container">
-        <a>Информация</a>
-        <a>Программа</a>
-        <a>Гости</a>
-        <a>О нас</a>
+      <div>
+        <a href="#programm">Программа</a>
+        <a href="#laws">Законы</a>
+        <a href="#guests">Гости</a>
+        <a href="#information">Информация</a>
+        <a href="#about">О нас</a>
       </div>
     </nav>
-    <h1>(Welcome to our wedding)</h1>
-    <h3>Ukraine, Lviv, 03.08.2018</h3>
+    <h1><span>(</span>Welcome to our wedding<span>)</span></h1>
+    <h3 style="border-top: 1px solid #ffffff;">Ivan & Julia</h3>
+    <h3 style="display: block; padding-top: 0;">Ukraine, Lviv, 03.08.2018</h3>
   </header>
   <main>
-    <section>
-      <h2>Программа</h2>
-    </section>
+    <div class="container">
+      <section id="programm">
+        <h2>Программа</h2>
+        <table>
+          <tr>
+            <th>03 авг 2018</th>
+          </tr>
+          <tr>
+            <td>15.30</td>
+            <td>Сбор у входа в Шевченковский гай</td>
+          </tr>
+          <tr>
+            <td>16.00 - 16.30</td>
+            <td>Церемония бракосочетания в Шевченковском гаю</td>
+          </tr>
+          <tr>
+            <td>16.30 - 17.00</td>
+            <td>Фотосессия в Шевченковском гаю</td>
+          </tr>
+          <tr>
+            <td>17.00 - 18.00</td>
+            <td>Свободное время. Приведение организма в состояние алкогольного опьянения</td>
+          </tr>
+          <tr>
+            <td>18.00 - 19.00</td>
+            <td>Фотосессия в городе. Перемещение в ресторан на трамвае</td>
+          </tr>
+          <tr>
+            <td>19.00 - 23.00</td>
+            <td>Трапеза в ресторане</td>
+          </tr>
+          <tr>
+            <td>23.00 - &#8734;</td>
+            <td>Рандеву по местным питейным заведениям</td>
+          </tr>
+          <tr>
+            <th>04 авг 2018</th>
+          </tr>
+          <tr>
+            <td>09.00 - 12.00</td>
+            <td>Приведение организма в допраздничное состояние</td>
+          </tr>
+          <tr>
+            <td>12.00</td>
+            <td>Всем спасибо, все свободны</td>
+          </tr>
+        </table>
+      </section>
+      <section id="laws">
+        <h2>Законы</h2>
+        <ul>
+          <li>Видишь пьяную вишню - пьешь пьяную вишню</li>
+          <li>Пришедшие с цветами - Владимиры Владимировичи Путины</li>
+          <li>После 23.00 каблуки запрещены (кроме кирюхи)</li>
+          <li>Запрещено уставать тусоваться и становиться унылым</li>
+        </ul>
+      </section>
+      <section id="guests">
+        <h2>Гости</h2>
+        <figure>
+          <img src="./img/vanya.jpg">
+          <figcaption>
+            <h4>Ваня</h4>
+            <p class="city">г.Минск, Беларусь</p>
+            <p>Как-то раз в Грузии засмотрелся на попу. Ну и вот к чему это всё привело.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/julia.jpg">
+          <figcaption>
+            <h4>Юля</h4>
+            <p class="city">г.Киев, Украина</p>
+            <p>Пока ещё не подозревает во что вляпалась.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/anton.jpg">
+          <figcaption>
+            <h4>Антон (Рыжий)</h4>
+            <p class="city">г.Берлин, Германия</p>
+            <p>Самый сильный человек Судака (Крым, Украина) по состоянию на июль 2008 г.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/sima.jpg">
+          <figcaption>
+            <h4>Сима (Жена Рыжего)</h4>
+            <p class="city">г.Варшава, Польша</p>
+            <p>Красавица, хозяйка, начальница отдела по торговле самолётами. Так и не ясно зачем вышла за рыжего. </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/lisnyak.jpg">
+          <figcaption>
+            <h4>Наташа (Лисняк)</h4>
+            <p class="city">г.Кировоград, Украина</p>
+            <p>Вкрай негативне вiдношення до алкоголю. До першої чарки.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="">
+          <figcaption>
+            <h4>Вова (Лиснячий)</h4>
+            <p class="city">г.Кировоград, Украина</p>
+            <p>Без комментариев.Сами всё увидите.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/kirill1.jpg">
+          <figcaption>
+            <h4>Кирилл (Васильевич)</h4>
+            <p class="city">г.Минск, Беларусь</p>
+            <p>Ветеран боевых действий во Вьетнаме, Афганистане и Йемене. Весь в отца.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/katya.jpg">
+          <figcaption>
+            <h4>Катя (Жена Васильича)</h4>
+            <p class="city">г.Минск, Беларусь</p>
+            <p>Преуспевающий аграрий. Считает, что у неё нет чувства юмора. Так и есть.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/barny.jpg">
+          <figcaption>
+            <h4>Барни (Злая собака)</h4>
+            <p class="city">г.Минск, Беларусь</p>
+            <p>Боится котов. Боится грозы.<br>Не боится мусоров.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/jenya.jpg">
+          <figcaption>
+            <h4 style="font-size: 23px;">Женя (Собутыльница Юли)</h4>
+            <p class="city">г.Грац, Австрия</p>
+            <p>Умудрилась заставить англичанина прожить 2 года в Харькове.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/natasha.jpg">
+          <figcaption>
+            <h4>Наташа (Сестра Юли)</h4>
+            <p class="city">г.Киев, Украина</p>
+            <p>Цель в жизни - выяснить, что ядрёней: ментоловый ликер или бехеровка.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/andrew.jpg">
+          <figcaption>
+            <h4 style="font-size: 21px;">Андрей (Наташин бойфренд)</h4>
+            <p class="city">г.Киев, Украина</p>
+            <p>Подарил Наташе кота. Молодец. Теперь некому оставить Барни.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/mama.jpg">
+          <figcaption>
+            <h4>Людмила (Тёща)</h4>
+            <p class="city">г.Кировоград, Украина</p>
+            <p>Рожает исключительно принцесс.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/vova.jpg">
+          <figcaption>
+            <h4>Вова (Дядя)</h4>
+            <p class="city">г.Кировоград, Украина</p>
+            <p>Крайне щепетилен к выбору чая. Уходит в пятницу - возвращается в понедельник.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="./img/lisytsya.jpg">
+          <figcaption>
+            <h4>Виктор (Лисица)</h4>
+            <p class="city">г.Львов, Украина</p>
+            <p>Предводитель фан-клуба Ливерпуля во Львове. Имеет скидку 10% на всё.</p>
+          </figcaption>
+        </figure>
+      </section>
+      <section id="information">
+        <h2>Информация</h2>
+        <div class="info">
+          <h3 style="border-bottom: 1px solid #ffffff;">Проживание</h3>
+          <table>
+            <tr>
+              <td>Avenue Apartment<br><span>Oleksandra Fredra Street, 6</span></td>
+              <td>Ваня и Юля</td>
+            </tr>
+            <tr>
+              <td>Jam Hotel Hnatyuka<br><span>Akademika Hnatyuka Street, 6</span></td>
+              <td>Кирилл и Катя<br>Антон и Сима<br>Андрей и Наташа<br>Мама и Вова</td>
+            </tr>
+            <tr>
+              <td>Lviv Centre Apartment<br><span>Svobody Ave, 3</span></td>
+              <td>Лисняк и Вова<br>Женя</td>
+            </tr>
+          </table>
+        </div>
+        <div class="info">
+          <h3 style="border-bottom: 1px solid #ffffff;">Как добраться</h3>
+          <table>
+            <tr>
+              <td>Площа Рынок -<br>Шевченковский гай</td>
+              <td>Трамвай N2 до ст.Мечникова</td>
+            </tr>
+            <tr>
+              <td>Аэропорт -<br>Центр</td>
+              <td>Автобус N48<br>Тролейбус N9</td>
+            </tr>
+            <tr>
+              <td>Ж/Д вокзал -<br>Центр</td>
+              <td>Трамваи N1, N6, N10<br>Автобусы N16, N31, N32</td>
+            </tr>
+          </table>
+        </div>
+        <div class="info">
+          <h3 style="border-bottom: 1px solid #ffffff;">Контакты</h3>
+          <table>
+            <tr>
+              <td>Ваня</td>
+              <td>
+                <a href="tel:+375296885785">+375296885785</a>
+                <br>
+                <a href="tel:+375296885785">+375296885785</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Юля</td>
+              <td><a href="tel:+380660886981">+380660886981</a></td>
+            </tr>
+            <tr>
+              <td>Виктор Лисица</td>
+              <td><a href="tel:+380930078500">+380930078500</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="info">
+          <h3 style="border-bottom: 1px solid #ffffff;">Карта</h3>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1P1CkLMuv47qJpgm8gqyqJSh7DL9LumVl&hl=en" width="90%" height="90%"></iframe>
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
 
