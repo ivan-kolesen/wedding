@@ -29,6 +29,7 @@
 	-webkit-transition: transform 0.6s;
 	-moz-transition: transform 0.6s;
 	transition: transform 0.6s;
+	box-shadow: 0 0 20px 7px #000000;
 }
 
 .side-back {
@@ -37,6 +38,7 @@
 	-ms-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 	display: table;
+	box-shadow: 0 0 20px 7px #000000;
 }
 
 .side-back div {
@@ -73,7 +75,7 @@
 	margin: 0 auto;
 	text-align: center;
 	background-color: white;
-	box-shadow: 0 0 20px 7px #000000;
+
 }
 
 .fullscreen figure img {
