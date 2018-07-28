@@ -163,6 +163,10 @@ td{
 	text-align: left;
 }
 
+td a{
+	display: block;
+}
+
 td a:hover{
 	color: #ffd52d;
 	transition: 300ms;
@@ -351,7 +355,7 @@ footer img{
 	td{
 		min-width: 22vw;
 		font-size: 22px;
-		padding: 20px 15px 0;
+		padding: 20px 14px 0;
 	}
 
 	td a{
