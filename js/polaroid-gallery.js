@@ -108,7 +108,7 @@ var polaroidGallery = (function () {
         var minR = -45;
         var rotRandomD = Math.random() * (maxR - minR) + minR;
 
-        var x = Math.floor((window.innerWidth - data.item.offsetWidth) * randomX);
+        var x = Math.floor((window.innerWidth - data.item.offsetWidth - 40) * randomX);
         var y = Math.floor((window.innerHeight - data.item.offsetHeight - navbarHeight*2) * randomY);
 
         data.item.style.zIndex = 1;
