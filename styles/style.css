@@ -90,7 +90,7 @@ h3{
 
 h4{
 	font-size: 26px;
-	letter-spacing: 1px;
+	line-height: 24px;
 	color: #ffffff;
 	margin: 10px auto 0;
 }
@@ -243,6 +243,19 @@ iframe{
 	margin: 30px auto;
 }
 
+footer img{
+	width: 200px;
+	margin: 30px auto 15px;
+}
+
+.fs21{
+	font-size: 21px;
+}
+
+.fs23{
+	font-size: 23px;
+}
+
 @media (max-width: 768px) {
 	h1{
 		margin-top: 30vh;
@@ -268,7 +281,6 @@ iframe{
 
 	h4{
 		font-size: 26px;
-		letter-spacing: 1px;
 		color: #ffffff;
 		margin: 10px auto 0;
 	}
@@ -344,6 +356,7 @@ iframe{
 
 	td a{
 		padding: 0;
+		font-size: 22px;
 	}
 
 	ul{
@@ -412,5 +425,9 @@ iframe{
 	iframe{
 		width: 90vw;
 		height: 50vh;
+	}
+
+	.fs21{
+		font-size: 26px;
 	}
 }
